@@ -1,0 +1,6 @@
+{ 
+    "name": "Мои задачи", 
+    "short_name": "Задачи", 
+    "start_url": "/", 
+    "display": "standalone" 
+}

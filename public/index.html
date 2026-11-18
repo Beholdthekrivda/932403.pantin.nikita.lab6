@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <!-- Подключение PWA манифеста (пункт из лабы) -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3b82f6">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Простая навигация для проверки маршрутов -->
+        <nav>
+            <a href="/">Главная</a> | 
+            <a href="/about">О себе</a>
+        </nav>
+
+        <h1>Мои задачи</h1>
+
+        <!-- Форма добавления задачи -->
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Что нужно сделать?" required autocomplete="off">
+            <button type="submit">Добавить</button>
+        </form>
+
+        <!-- Сюда будут выводиться задачи -->
+        <ul id="task-list">
+            <li>Загрузка...</li>
+        </ul>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
